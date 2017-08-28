@@ -1,4 +1,4 @@
-message(STATUS "Loading tests-cli module...")
+message(STATUS "Loading tests-cli app...")
 
 if (NOT CONFIGURED_ONCE)
 	set(APP_TESTS_CLI_SOURCE_DIR ${APP_TESTS_CLI_DIR}/src)
