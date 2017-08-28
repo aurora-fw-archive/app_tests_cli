@@ -6,4 +6,6 @@ endif()
 
 add_executable(aurorafw_app_tests_shell ${APP_TESTS_CLI_SOURCE_DIR}/test_shell.cpp)
 
+target_link_libraries(aurorafw_app_tests_shell aurorafw-core aurorafw-cli aurorafw-io)
+
 set_target_properties(aurorafw_app_tests_shell PROPERTIES OUTPUT_NAME test_shell.out)
