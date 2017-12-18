@@ -34,7 +34,7 @@ afwslot slot_MyApp_on_open()
 		CLI::Log(CLI::Warning, "test the log");
 		CLI::Log(CLI::Error, "test the log");
 		CLI::Log(CLI::Notice,"test the log");
-		CLI::Log(CLI::Debug, "test the log");
+		Debug::Log("test the log");
 	}
 	#ifdef AURORAFW_
 		CLI::Log(CLI::Notice, "Aurora Framework Macro detected!");
