@@ -24,17 +24,17 @@ Application *MyApp;
 
 afwslot slot_MyApp_on_open()
 {
-	if(!Debug::getDebugStatus())
+	if(!DebugManager::getStatus())
 	{
 		CLI::Log(CLI::Notice, "debug is disable");
 	}
-	if(Debug::getDebugStatus())
+	if(DebugManager::getStatus())
 	{
 		CLI::Log(CLI::Notice, "test the log");
 		CLI::Log(CLI::Warning, "test the log");
 		CLI::Log(CLI::Error, "test the log");
 		CLI::Log(CLI::Notice,"test the log");
-		Debug::Log("test the log");
+		DebugManager::Log("test the log");
 	}
 	#ifdef AURORAFW_
 		CLI::Log(CLI::Notice, "Aurora Framework Macro detected!");
