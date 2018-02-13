@@ -40,17 +40,17 @@ afwslot slot_MyApp_on_open()
 		CLI::Log(CLI::Notice, "Aurora Framework Macro detected!");
 	#endif
 
-	CLI::Log(CLI::Information, "Getting total virtual memory:\t\t", Info::RAM::getTotalVirtualMemory());
-	CLI::Log(CLI::Information, "Getting used virtual memory:\t\t", Info::RAM::getUsedVirtualMemory());
-	CLI::Log(CLI::Information, "Getting free virtual memory:\t\t", Info::RAM::getFreeVirtualMemory());
-	CLI::Log(CLI::Information, "Getting total physical memory:\t\t", Info::RAM::getTotalPhysicalMemory());
-	CLI::Log(CLI::Information, "Getting used physical memory:\t\t", Info::RAM::getUsedPhysicalMemory());
-	CLI::Log(CLI::Information, "Getting free physical memory:\t\t", Info::RAM::getFreePhysicalMemory());
-	CLI::Log(CLI::Information, "Getting Operation System Name:\t\t", Info::OS::getName());
-	CLI::Log(CLI::Information, "Getting Operation System Architecture:\t", Info::OS::getArchitecture());
-	CLI::Log(CLI::Information, "Getting Operation System Manufacturer:\t", Info::OS::getManufacturer());
-	CLI::Log(CLI::Information, "Getting Operation System Version:\t\t", Info::OS::getVersion());
-	CLI::Log(CLI::Information, "Getting User Computer Name:\t\t", Info::OS::getUserComputerName());
+	CLI::Log(CLI::Information, "Getting total virtual memory:\t\t", IO::Info::getTotalVirtualMemory());
+	CLI::Log(CLI::Information, "Getting used virtual memory:\t\t", IO::Info::getUsedVirtualMemory());
+	CLI::Log(CLI::Information, "Getting free virtual memory:\t\t", IO::Info::getFreeVirtualMemory());
+	CLI::Log(CLI::Information, "Getting total physical memory:\t\t", IO::Info::getTotalPhysicalMemory());
+	CLI::Log(CLI::Information, "Getting used physical memory:\t\t", IO::Info::getUsedPhysicalMemory());
+	CLI::Log(CLI::Information, "Getting free physical memory:\t\t", IO::Info::getFreePhysicalMemory());
+	CLI::Log(CLI::Information, "Getting Operation System Name:\t\t", IO::Info::getOSName());
+	CLI::Log(CLI::Information, "Getting Operation System Architecture:\t", IO::Info::getArchitecture());
+	CLI::Log(CLI::Information, "Getting Operation System Manufacturer:\t", IO::Info::getOSManufacturer());
+	CLI::Log(CLI::Information, "Getting Operation System Version:\t\t", IO::Info::getOSVersion());
+	CLI::Log(CLI::Information, "Getting User Computer Name:\t\t", IO::Info::getUserComputerName());
 
 	//Input testing
 	CLI::Output << "Insert something: ";
