@@ -22,7 +22,7 @@ using namespace AuroraFW;
 
 Application *MyApp;
 
-afwslot slot_MyApp_on_open()
+afwslot slot_MyApp_on_open(Application* )
 {
 	if(!DebugManager::getStatus())
 	{
@@ -62,7 +62,7 @@ afwslot slot_MyApp_on_open()
 
 int main(int argc, char * argv[])
 {
-	MyApp = new Application(slot_MyApp_on_open, argc, argv);
+	MyApp = new Application(argc, argv, slot_MyApp_on_open);
 	delete MyApp;
 	return 0;
 }
