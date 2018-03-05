@@ -22,7 +22,7 @@ using namespace AuroraFW;
 
 Application *MyApp;
 
-afwslot slot_MyApp_on_open(Application* )
+void slot_MyApp_on_open(Application* )
 {
 	if(!DebugManager::getStatus())
 	{
